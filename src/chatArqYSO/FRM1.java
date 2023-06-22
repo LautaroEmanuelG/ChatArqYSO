@@ -75,7 +75,7 @@ public class FRM1 extends javax.swing.JFrame implements Observer {
         //Aqui debemos colocar la ip de quien se conecta
         //El puerto importa si se conecta del mismo ip, al ser ips diferentes el puerto no importa
         //IP DE LA OTRA MAQUINA
-        Cliente c = new Cliente("",5000, mensaje);
+        Cliente c = new Cliente("192.168.1.71",5000, mensaje);
         Thread t = new Thread(c);
         t.start();
 
